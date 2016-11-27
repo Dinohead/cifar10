@@ -1,0 +1,13 @@
+#Use these commands to build and retrain the TensorFlow inception model
+#for image recognition jobs
+
+#run these commands from tensorflow source directory (likely: ~/tensorflow)
+
+#build the retrainer
+
+bazel build tensorflow/examples/image_retraining:retrain
+
+#train model
+#the TRAININGDIRECTORY is the location of your jpg images for training
+
+bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ~/TRAININGDIRECTORY

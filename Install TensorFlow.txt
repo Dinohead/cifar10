@@ -1,0 +1,49 @@
+#use these commands to build a tensorflow enviornmnet on a fresh install of Ubuntu 16.04
+
+#install pip, python-dev, and tensorflow
+sudo apt-get install python-pip python-dev
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl
+sudo -H pip install --upgrade $TF_BINARY_URL
+
+#get tensorflow source and put in home directory (rember where the source is placed, this where you build inception model)
+cd ~
+git clone https://github.com/tensorflow/tensorflow
+
+#install bazel
+echo "deb http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get update && sudo apt-get install bazel
+sudo apt-get upgrade bazel
+sudo apt-get install python-numpy swig python-dev python-wheel
+
+#test tensorflow install
+python
+
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, TensorFlow!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
+#Hello, TensorFlow!
+>>> a = tf.constant(10)
+>>> b = tf.constant(32)
+>>> print(sess.run(a + b))
+#42
+>>> exit()
+
+#get tensorflow python library locaction
+python -c 'import os; import inspect; import tensorflow; print(os.path.dirname(inspect.getfile(tensorflow)))'
+
+#run TensorFlow demo model
+python -m tensorflow.models.image.mnist.convolutional
+
+#from ~/tensorflow run configuration script
+#answer no to all questions
+./configure
+
+
+
+
+
+

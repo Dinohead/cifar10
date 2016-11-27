@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#this bash script will call the tensorTest to create predictions on a test set
+#This script calls the tensorTest.py script in a loop so that multiple jpgs can be predicted
+#the images should be placed in a single dirctory and labeled from 1..n
+
+
+#variables in bash script:
+#set the loopvalue to the number of images you would like to predict
+
+#variables in tensorTest.py
+#set the image folder location, varibale - imagePath
+#set the output file location, varibale - outputFile
+
+loopvalue = 5000
+
+
+
+for i in {1..$loopvalue}
+do
+	python tensorTest.py $i
+done 
