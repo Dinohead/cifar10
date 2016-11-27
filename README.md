@@ -122,7 +122,7 @@ The images for the contest were provided as a csv of pixel values. The images ha
 into directories. The "imageConverter.R" script was used to convert the train.csv file to a training direcotry with all images
 sorted and in the proper format.
 
-The images were then moved to the ubuntu machine by mounting a cifs volume. Actually moving the images over
+The images were then moved to the ubuntu machine by mounting a cifs volume. SCP could also be used. Actually moving the images over
 could be accomplished in a variety of ways and is left up to the user.
 
 
