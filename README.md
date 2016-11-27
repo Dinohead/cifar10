@@ -37,39 +37,73 @@ of the directory that it is in.
 Here is an example of the required folder structure for the first 15 imagaes from CIFAR-10 dataset.
 
 -Train
-	-airplane\n
+	-airplane
+
+	
 		8.jpg
+		
 		11.jpg
+		
 		14.jpg
+		
 		.......
+
 	-automobile
+
 		2.jpg
+
 		6.jpg
+
 		.......
+
 	-bird
+
 		3.jpg
+
 		15.jpg
+
 		.......
+
 	-cat
+
 		7.jpg
+
 		9.jpg
+
 		.......
+
 	-deer
+
 		13.jpg
+
 		.......
+
 	-dog
+
 		10.jpg
+
 		12.jpg
+
 		.......
+
 	-frog
+
 		.......
+
 	-horse
+
 		5.jpg
+
 		.......
+
 	-ship
+
 		1.jpg
+
 		.......
+
 	-truck
+
 		4.jpg
 		
 Notice that all numbers from 1..15 are included and none are repeated. If the images are not sorted and labeled
