@@ -37,74 +37,74 @@ of the directory that it is in.
 Here is an example of the required folder structure for the first 15 imagaes from CIFAR-10 dataset.
 
 -Train
-	-airplane
+  -airplane
 
 	
-		8.jpg
+    8.jpg
 		
-		11.jpg
+    11.jpg
 		
-		14.jpg
+    14.jpg
 		
-		.......
+    .......
 
-	-automobile
+  -automobile
 
-		2.jpg
+    2.jpg
 
-		6.jpg
+    6.jpg
 
-		.......
+    .......
 
-	-bird
+  -bird
 
-		3.jpg
+    3.jpg
 
-		15.jpg
+    15.jpg
 
-		.......
+    .......
 
-	-cat
+  -cat
 
-		7.jpg
+    7.jpg
 
-		9.jpg
+    9.jpg
 
-		.......
+    .......
 
-	-deer
+  -deer
 
-		13.jpg
+    13.jpg
 
-		.......
+    .......
 
-	-dog
+  -dog
 
-		10.jpg
+    10.jpg
 
-		12.jpg
+    12.jpg
 
-		.......
+    .......
 
-	-frog
+  -frog
 
-		.......
+    .......
 
-	-horse
+  -horse
 
-		5.jpg
+    5.jpg
 
-		.......
+    .......
 
-	-ship
+  -ship
 
-		1.jpg
+    1.jpg
 
-		.......
+    .......
 
-	-truck
+  -truck
 
-		4.jpg
+    4.jpg
 		
 Notice that all numbers from 1..15 are included and none are repeated. If the images are not sorted and labeled
 correctly it will likely break the included scripts.
@@ -119,7 +119,7 @@ values.
 Step 2.5: This is specific to my Contest 2 submission
 
 The images for the contest were provided as a csv of pixel values. The images had to be converted back to jpg format and sorted 
-into directories. The "imageConverter.R" script was used to convert the train.csv file to a training direcotry with all images
+into directories. The "imageConverter.R" script was used to convert the train.csv file to a training directory with all images
 sorted and in the proper format.
 
 The images were then moved to the ubuntu machine by mounting a cifs volume. SCP could also be used. Actually moving the images over
