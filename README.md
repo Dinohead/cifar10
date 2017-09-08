@@ -37,6 +37,7 @@ of the directory that it is in.
 Here is an example of the required folder structure for the first 15 imagaes from CIFAR-10 dataset.
 
 -Train
+
   -airplane
 
 	
